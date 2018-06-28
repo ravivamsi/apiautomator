@@ -4,7 +4,7 @@
   "description": "Lightweight Node Application for the API Automation Testing ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/*Test.js --reporter spec"
   },
   "repository": {
     "type": "git",
