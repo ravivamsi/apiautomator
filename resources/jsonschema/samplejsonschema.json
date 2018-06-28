@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "integer",
+      "title": "The Userid Schema "
+    },
+    "id": {
+      "type": "integer",
+      "title": "The Id Schema "
+    },
+    "title": {
+      "type": "string",
+      "title": "The Title Schema "
+    },
+    "body": {
+      "type": "string",
+      "title": "The Body Schema "
+    }
+  }
+}
