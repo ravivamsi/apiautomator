@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/*Test.js --reporter spec",
-    "smoke": "mocha test/smokeTest.js --reporter spec"
+    "smoke": "mocha test/smoke/smokeTest.js --reporter spec",
+    "regression": "mocha test/regression/regressionTest.js --reporter spec"
   },
   "repository": {
     "type": "git",
