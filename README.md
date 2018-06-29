@@ -2,6 +2,10 @@
 
 Light Node Application for API Automation Testing
 
+
+[![Build Status](https://semaphoreci.com/api/v1/ravivamsi/apiautomator/branches/master/badge.svg)](https://semaphoreci.com/ravivamsi/apiautomator)
+
+
 ## Folder Structure of apiautomator framework
 
  -> Folder
