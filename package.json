@@ -4,9 +4,9 @@
   "description": "Lightweight Node Application for the API Automation Testing ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*Test.js --reporter spec",
-    "smoke": "mocha test/smoke/smokeTest.js --reporter spec",
-    "regression": "mocha test/regression/regressionTest.js --reporter spec"
+    "test": "mocha test/restTest.js --reporter mocha-simple-html-reporter --reporter-options output=reports/html/restTestReport.html",
+    "smoke": "mocha test/smoke/smokeTest.js --reporter mocha-simple-html-reporter --reporter-options output=reports/html/smokeTestReport.html",
+    "regression": "mocha test/regression/regressionTest.js --reporter mocha-simple-html-reporter --reporter-options output=reports/html/regressionTestReport.html"
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,7 @@
     "fs": "0.0.1-security",
     "handlebars": "^4.0.11",
     "mocha": "^5.2.0",
+    "mocha-simple-html-reporter": "^1.1.0",
     "request": "^2.87.0",
     "should": "^13.2.1",
     "soap": "^0.24.0",

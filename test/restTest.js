@@ -2,36 +2,16 @@ var jsonSchemaDef = {
   "type": "object",
   "properties": {
     "userId": {
-      "type": "integer",
-      "title": "The Userid Schema ",
-      "default": 0,
-      "examples": [
-        1
-      ]
+      "type": "integer"
     },
     "id": {
-      "type": "integer",
-      "title": "The Id Schema ",
-      "default": 0,
-      "examples": [
-        1
-      ]
+      "type": "integer"
     },
     "title": {
-      "type": "string",
-      "title": "The Title Schema ",
-      "default": "",
-      "examples": [
-        "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
-      ]
+      "type": "string"
     },
     "body": {
-      "type": "string",
-      "title": "The Body Schema ",
-      "default": "",
-      "examples": [
-        "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-      ]
+      "type": "string"
     }
   }
 };
@@ -42,7 +22,7 @@ var expect = require("chai").expect;
 var mocha = require("mocha");
 var chai = require('chai');
 chai.use(require('chai-json-schema'));
-var sys = require('sys');
+// var sys = require('sys');
 var fs = require('fs');
 var base = "https://jsonplaceholder.typicode.com";
 var util = require("util");
@@ -58,4 +38,7 @@ describe('Simple App Test', function() {
       done();
     });
   });
+
+
+
 });

@@ -2,20 +2,16 @@
   "type": "object",
   "properties": {
     "userId": {
-      "type": "integer",
-      "title": "The Userid Schema "
+      "type": "integer"
     },
     "id": {
-      "type": "integer",
-      "title": "The Id Schema "
+      "type": "integer"
     },
     "title": {
-      "type": "string",
-      "title": "The Title Schema "
+      "type": "string"
     },
     "body": {
-      "type": "string",
-      "title": "The Body Schema "
+      "type": "string"
     }
   }
 }
