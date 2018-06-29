@@ -427,14 +427,35 @@ body {
                     <li class="passes">passes: <em>1</em></li>
                     <li class="pending">pending: <em>0</em></li>
                     <li class="failures">failures: <em>0</em></li>
-                    <li class="duration">duration: <em>148ms</em></li>
+                    <li class="duration">duration: <em>180ms</em></li>
                 </ul>
             </div>
-            <ul id="report"><li class="suite"><h1>Simple App Test</h1><ul><li class="test pass slow"><h2>Returns the json response<span class="duration">142ms</span></h2><pre><code>request.get({ url: base + &#x27;/posts/1&#x27;},
+            <ul id="report"><li class="suite"><h1>Simple App Test</h1><ul><li class="test pass slow"><h2>Returns the json response<span class="duration">175ms</span></h2><pre><code>request.get({ url: base + &#x27;/posts/1&#x27;},
 function(error, response, body) {
+  // console.log(response)
+  // console.log(body);
+  var responseBody = JSON.parse(body);
+  // Status Code Assertions
   expect(response.statusCode).to.equal(200);
+  expect(response.statusCode).to.not.equal(400);
+  expect(response.statusCode).to.not.equal(500);
+  expect(response.statusCode).to.not.equal(300);
+  expect(response.statusCode).to.not.equal(201);
+  // Schem Definition Assertion
   expect(body).to.not.be.jsonSchema(jsonSchemaDef);
-  console.log(body);
+  // Response Body Assertion
+  expect(responseBody).to.have.property(&#x27;id&#x27;).but.not.own.property(&#x27;Id&#x27;);
+  expect(responseBody).to.have.property(&#x27;userId&#x27;).but.not.own.property(&#x27;Userid&#x27;);
+  expect(responseBody).to.have.property(&#x27;title&#x27;);
+  expect(responseBody).to.have.property(&#x27;body&#x27;);
+  expect(responseBody).to.have.all.keys(&#x27;id&#x27;, &#x27;userId&#x27;, &#x27;title&#x27;, &#x27;body&#x27;);
+  expect(responseBody).to.not.have.any.keys(&#x27;Id&#x27;, &#x27;ID&#x27;, &#x27;UserId&#x27;, &#x27;Userid&#x27;, &#x27;Title&#x27;, &#x27;Body&#x27;);
+  // Key Type
+  expect(responseBody.body).to.be.a(&#x27;string&#x27;);
+  expect(responseBody.title).to.be.a(&#x27;string&#x27;);
+  expect(responseBody.id).to.be.a(&#x27;number&#x27;);
+  expect(responseBody.userId).to.be.a(&#x27;number&#x27;);
+
   done();
 });</code></pre></li></ul></li></ul>
         </div>
