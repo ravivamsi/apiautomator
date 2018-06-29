@@ -1,20 +1,25 @@
 # apiautomator
+
 Light Node Application for API Automation Testing
 
 ## Folder Structure of apiautomator framework
 
  -> Folder
- -- File 
+ -- File
 
 ```terminal
 
 ->  reports
     ->  html
+        -- smokeTestReport.html
+        -- regressionTestReport.html
     ->  json
     ->  handlebars
 ->  resources
     ->  jsonSchema
+        -- samplejsonschema.json
     ->  xmlSchema
+        -- samplexmlschema.xml
 ->  test
     ->  regression
     ->  smoke
@@ -49,3 +54,18 @@ $ npm run smoke
 ```terminal
 $ npm run regression
 ```
+
+
+
+## To Do
+
+### Schema Assertions
+
+JSON Schema
+https://www.npmjs.com/package/chai-ajv-json-schema
+XML Schema
+https://www.npmjs.com/package/xsd-schema-validator
+
+### SOAP Requests
+
+https://github.com/circa10a/easy-soap-request/blob/master/test/retrieveLngLattest.js
