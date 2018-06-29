@@ -3,8 +3,10 @@ Light Node Application for API Automation Testing
 
 ## Folder Structure of apiautomator framework
 
-| -> Folder | -- File |
+ -> Folder
+ -- File 
 
+```terminal
 
 ->  reports
     ->  html
@@ -23,7 +25,7 @@ Light Node Application for API Automation Testing
 --  LICENSE
 --  .gitignore
 --  .npmignore
-
+```
 
 ## Node Install
 
