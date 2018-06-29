@@ -1,0 +1,155 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-06-29T06:48:54.568Z",
+    "end": "2018-06-29T06:48:54.985Z",
+    "duration": 417,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "83c8fab1-5832-4b11-81c5-6d0840b762b6",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "04c2c235-34f3-4e6c-a7b0-f3448792e79e",
+        "title": "Return the JSON Response for all the records",
+        "fullFile": "/Users/vamsiravi/git/apiautomator/test/smoke/smokeTest.js",
+        "file": "/test/smoke/smokeTest.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Returns the json response",
+            "fullTitle": "Return the JSON Response for all the records Returns the json response",
+            "timedOut": false,
+            "duration": 219,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request.get({ url: base + '/posts'},\nfunction(error, response, body) {\n  expect(response.statusCode).to.equal(200);\n  console.log(body);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "118e45d9-24d2-4831-9c7b-8cb16c0a8b1f",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "118e45d9-24d2-4831-9c7b-8cb16c0a8b1f"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 219,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "b4b09e17-7048-4275-b460-1b758011ceb0",
+        "title": "Return the JSON Response for a specific record",
+        "fullFile": "/Users/vamsiravi/git/apiautomator/test/smoke/smokeTest.js",
+        "file": "/test/smoke/smokeTest.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Returns the json response",
+            "fullTitle": "Return the JSON Response for a specific record Returns the json response",
+            "timedOut": false,
+            "duration": 95,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request.get({ url: base + '/posts/2'},\nfunction(error, response, body) {\n  expect(response.statusCode).to.equal(200);\n  console.log(body);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "3fc11190-cea9-4dde-a685-3473c34ca80c",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "3fc11190-cea9-4dde-a685-3473c34ca80c"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 95,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "89274587-7e51-4ae4-ab97-2e83cef036d5",
+        "title": "Return the comments in the JSON Response",
+        "fullFile": "/Users/vamsiravi/git/apiautomator/test/smoke/smokeTest.js",
+        "file": "/test/smoke/smokeTest.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Returns the json response",
+            "fullTitle": "Return the comments in the JSON Response Returns the json response",
+            "timedOut": false,
+            "duration": 91,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request.get({ url: base + '/posts/1/comments'},\nfunction(error, response, body) {\n  expect(response.statusCode).to.equal(200);\n  console.log(body);\n  done();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ec0bfa77-2b8a-4a05-a7db-bc4c12fc6b60",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "ec0bfa77-2b8a-4a05-a7db-bc4c12fc6b60"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 91,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
